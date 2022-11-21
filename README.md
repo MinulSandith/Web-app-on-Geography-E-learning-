@@ -7,9 +7,7 @@ Hello world GUI built using flask
   >pip install flask
 3. Run the app.py
 4. Then open the browser and type the link shown as given in the terminal called "Running on"
-###   It will be like this
+###   It will be like one of those
   > http://###.#.#.#:5000 
-  > 
-  >or
   >
   > localhost:[the digits after the ":" sign ] 
