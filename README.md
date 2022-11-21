@@ -8,5 +8,7 @@ Hello world GUI built using flask
 3. Run the app.py
 4. Then open the browser and type the link shown as,
   > http://###.#.#.#:5000 
-         ###or
+  > 
+  >or
+  >
   > localhost:[the digits after the ":" sign ] 
