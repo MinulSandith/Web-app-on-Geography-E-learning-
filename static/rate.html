@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head><script src="google.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#rate-submit").click(function(){
+    $("div2").hide();
+  });
+  $("#rate-submit").click(function(){
+    $("div2").show();
+  });
+});
+
+</script>
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h2{color:white;}
+body{background-color:rgb(0,0,0,0.44444);height:80%;width:100%;}
+.a,.b,.c,.d,.e{
+  color: white;  transition: 1s;
+}
+.a:hover{color:#818181;}
+.b:hover{color:#818181;}
+.c:hover{color:#818181;}
+.d:hover{color:#818181;}
+.e:hover{color:#818181;}
+.rateSubmit{background-color:rgb(40, 110, 200);border:none;border-radius: 25px;padding:15px;margin: auto;}
+.rateSubmit:hover{background-color:#2A77CA;}
+div2{display:none;}
+.alert {
+  padding: 10px;
+  background-color: #46C5F5;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+ margin: auto;
+  width:40%;
+  height:150px; border-radius: 10px;
+}
+
+
+.alert.info {background-color: #2196F3;display:none;font-size:130%;}
+
+
+.rate-closebtn {
+background-color:darkgrey;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;padding:5px;  border-radius: 10px;
+}
+.rate-main{width:50%;margin:auto;margin-top:10%;}
+.rate-closebtn:hover {
+  background-color: #787561;color:white;
+}
+#number-star{color:white;font-size:150%}
+.rating{text-align:center;}
+#rate-discription{width:50%;}
+p{color:white;text-align:center;}
+
+
+</style>
+</head>
+<body>
+<div class="rate-main">
+<div class="rating"><h2>Rate Us</h2>
+<span class="fa fa-star fa-2x a" onclick="a()" id="a"></span>
+<span class="fa fa-star fa-2x b"onclick="b()" id="b"></span>
+<span class="fa fa-star fa-2x c"onclick="c()" id="c"></span>
+<span class="fa fa-star fa-2x d"onclick="d()" id="d"></span>
+<span class="fa fa-star fa-2x e"onclick="e()" id="e"></span><p id="number-star">Stars:</p>
+<input type="text" id="rate-discription" name="rate-discription">
+<button class="rateSubmit" onclick="rateSubmit()"id="rate-submit">Submit</button>
+<br><br><div2 class="alert info"id="alert-info">
+  <br><span class="rate-closebtn" onclick="okRate();okClose()">OK</span>
+  <strong>Thank You!</strong>  <p id ="thanksReply"></p>
+</div2>
+</div>
+</div>
+<p>(Please notify that you can only add one response)</p>
+
+
+
+
+
+
+
+</body>
+<script src="./rate-script.js">
+
+</script>
+</html>

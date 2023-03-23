@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    {% if x == "asia" %}
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='design.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='2 design.css') }}"link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {% else %}
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='2 design.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {% endif %}
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="{{url_for('asia')}}"> 
+        <i class="fa fa-map" aria-hidden="true">
+        </i>	&nbsp;Asia
+      </a>
+      <a href="{{url_for('mountains')}}"> 
+        <i class="fas fa-mountain">
+        </i>	&nbsp;Mountains
+      </a>
+      <a href="{{url_for('hills')}}"> 			
+        <i class="fas fa-compass">
+        </i>	&nbsp;Hills
+      </a>
+      <a href="{{url_for('waterfalls')}}">		
+        <i class="fas fa-rainbow">
+        </i>	&nbsp;Waterfalls
+      </a>
+      <a href="{{url_for('lakes')}}">		
+        <i class="fas fa-water">
+        </i>	&nbsp;Lakes
+      </a>
+      <a href="#">			
+        <i class="fas fa-ship">
+        </i>		&nbsp;Rivers
+      </a>
+      <a href="{{url_for('volcanos')}}">	
+        <i class="fas fa-fire">
+        </i>		&nbsp;Volcanos
+      </a>
+      <a href="#">			
+        <i class="fas fa-tree">
+        </i>		&nbsp;Forests
+      </a>
+      <a href="#">			
+        <i class="fas fa-sun">
+        </i>		&nbsp;Deserts
+      </a>
+      <a href="#">			
+        <i class="fab fa-servicestack">
+        </i>&nbsp;Oceans
+      </a>
+      <a href="#">			
+        <i class="far fa-snowflake">
+        </i>&nbsp;Icebergs
+      </a>
+      <a class="menu" href="#about" class="ab">	
+        <span style="font-size:17px;cursor:pointer" onclick="openNav()">  
+          <i class="fas fa-bars " >
+          </i> &nbsp;Menu 
+        </span> 
+      </a>
+    </div>
+    <div id="myNav" class="overlay">
+      
+      <a href="javascript:void(0)" class="closebtn overlayHide" onclick="closeNav()" id="overlayClose">&times;
+      </a>
+      <iframe src="{{url_for('static',filename='rate.html')}}" class="rate-show-hide rateHide" id="rate-show">
+      </iframe>
+      <div class="overlay-content" id="overlaytran">
+        <a href="{{url_for('home')}}"id="navjs">
+          <i class="fa fa-fw fas fa-home">
+          </i>&nbsp;Home
+        </a>
+        <a href="{{url_for('home')}}#2"id="navjs1">
+          <i class="fas fa-graduation-cap">
+          </i>&nbsp;Learn
+        </a>
+        <a href="{{url_for('home')}}#3" id="navjs2">
+          <i class="fas fa-address-card">
+          </i>&nbsp;About Us
+        </a>
+        <a href="#" id="navjs2" onclick="openRate()">
+          <i class="far fa-smile">
+          </i>&nbsp;Rate Us
+        </a>
+      </div>
+    </div>
+    <div id="rate" class="overlay">
+      
+      <a href="javascript:void(0)" class="closebtn overlayHide" onclick="closeRate()" id="rateClose">&times;
+      </a>
+      
+      
+      
+        <iframe src="{{url_for('static',filename='rate.html')}}" class="rate-show-hide " ></iframe>
+      
+    </div>
+    {% block navs %}
+    {% endblock navs%}
+    <div class="footer">
+      <li class="left">Designed by Minul Sandith.
+    </div>
+    <script src="{{url_for('static',filename='js.js')}}">
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </body>
+</html>

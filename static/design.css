@@ -1,0 +1,123 @@
+h1 {
+	font-family: Bookman Old Style;
+	font-size: 400%;
+	font-family: Castellar;
+	color: #9759F7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-family: Bookman Old Style;
+	font-size: 300%;
+	color: #5971F7;
+}
+
+h3 {
+	font-family: Bookman Old Style;
+	font-size: 200%;
+}
+
+h1,h2,h3 {
+	text-align: center;
+}
+
+.h31 {
+	color: #f0f;
+}
+
+.h32 {
+	color: #4000ff;
+}
+
+.h33 {
+	color: #ff0040;
+}
+
+p1 {
+	font-size: 125%;
+	font-family: Calibri;
+}
+
+p3 {
+	font-family: Kristen ITC;
+}
+
+body {
+	text-align: justify;
+	text-align: justify;
+	background-color: LightGoldenRodYellow;
+}
+
+div {
+	align: center;
+	font-size: 125%;
+	margin: auto;
+}
+
+img {
+	border-radius: 8px;
+}
+
+.m {
+	border: 0px outset red;
+	background-color: LightSlateGrey;
+	text-align: center;
+	font-size: 150%;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.h {
+	border: 0px outset red;
+	background-color: blue;
+	text-align: center;
+	font-size: 150%;
+	width: 100%;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.button1 {
+	background-color: LightGrey;
+	color: black;
+	border: 2px solid BlueViolet;
+}
+
+.button1:hover {
+	background-color: PaleVioletRed;
+	color: white;
+	border: 2px solid white;
+}
+
+.center {
+	margin: auto;
+	width: 40%;
+	border: 3px solid purple;
+	padding: 10px;
+}
+
+.ab {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	Length: 60%;
+}
+

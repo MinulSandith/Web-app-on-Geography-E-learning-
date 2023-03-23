@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>	<script src="{{url_for('static',filename='google.min.js')}}">
+</script>
+	<script src="{{url_for('static',filename='show.js')}}"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="{{url_for('static',filename='over design.css')}}">
+</head>
+
+<body>
+	<div class="header">
+		<h1 id="118">Geography</h1>
+	</div>
+	<div class="picture"></div>
+	<div class="content"><ul>
+		<div class="box">
+			<div class="homedirection">
+				<li><h2 id="2"><b>Learn Geography</b></h2></li>
+				<p1>you can learn many things about Geography about,</p1>
+				<br>
+				<br>
+				<div class="about">
+					<ol>
+						<div class="learndown" id="learndown">
+							<div>
+								<li>
+									<button class="learnbtn" onclick="learnshow();learnclose(this.id)" id="m">What are Physical Features</button>
+								</li>
+								<br>
+								<ul id="content">
+									<div class="learndown-content" id="learndown-content">
+										<a href="{{url_for('mountains')}}">
+											<li>Learn from begining</li>
+										</a>
+										<a href="{{url_for('mountains')}}">
+											<li>Mountains</li>
+										</a>
+										<a href="{{url_for('hills')}}">
+											<li>Hills</li>
+										</a>
+										<a href="{{url_for('waterfalls')}}">
+											<li>Waterfalls</li>
+										</a>
+										<a href="{{url_for('lakes')}}">
+											<li>Lakes</li>
+										</a>
+										<a href="#">
+											<li>Rivers</li>
+										</a>
+										<a href="{{url_for('volcanos')}}">
+											<li>Volcanos </li>
+										</a>
+										<a href="#">
+											<li>Forests</li>
+										</a>
+										<a href="#">
+											<li>Deserts</li>
+										</a>
+										<a href="#">
+											<li>Oceans</li>
+										</a>
+										<a href="#">
+											<li>Icebergs</li>
+										</a>
+									</div>
+								</ul>
+							</div>
+							<br>
+						</div>
+						<br>
+						<div class="learndown" id="learndown">
+							<div>
+								<li>
+									<button class="learnbtn" onclick="learnshow();learnclose(this.id)" id="m1">Physical features of asia</button>
+							</div>
+
+					<br>
+							<ul id="content">
+								<div class="learndown-content" id="learndown-content1">
+									<a href="{{url_for('asia')}}">
+								<li>From the begining</li>
+								</a>
+											<a href="{{url_for('asia')}}#1">
+										<li> Asia</li>
+									</a>
+									<a href="{{url_for('asia')}}#2">
+										<li>Encyclopedic entry vocabulary</li>
+									</a>
+									<a href="{{url_for('asia')}}#3">
+										<li>Mountain Systems of asia</li>
+									</a>
+									</a>
+									<a href="{{url_for('asia')}}#4">
+										<li>Plateaus of asia</li>
+									</a>
+									<a href="{{url_for('asia')}}#5">
+										<li>Plains, Steppes, and Deserts of asia</li>
+									</a>
+									<a href="{{url_for('asia')}}#6">
+										<li>Freshwater bodies in asia</li>
+									</a>
+									<a href="{{url_for('asia')}}#7">
+										<li>Saltwater bodies asia</li>
+								</div>
+								</a>
+							</ul>
+							</li>
+						</div>
+						<br>
+					</ol>
+				</div>
+				<br>
+			</div>
+		</div>
+<br>
+		<br><div class="box "><div class="homedirection"><li><h2><b>Test Your Knowledge</b></h2></li>
+		 <p1> Test how brilient you are in the field of Geography.<br>We designed some quiz under our limited content.Try them ;.  </p1></div><br></div>
+<br>
+<br>
+		 <div class="box " id="4"><div class="homedirection"><li><h2><b>Rate us</b></h2></li>
+ 		 <p1> Rate us and give recomendations to us;.  </p1><br><br>
+
+<iframe class="rateiframe" src="{{url_for('static',filename='rate.html')}}" ></iframe></div></div>
+
+
+<br>
+<br>
+		 <div class="box " id="3"><div class="homedirection"><li><h2><b>About Us</b></h2></li>
+ 		 <img src="{{url_for('static',filename='source of info.png')}} "style="width:20%;border-radius: 50%;display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 20%;
+		  "><br>
+<p1></p1></div>
+
+		 <div><br></div>
+
+
+
+</ul>
+
+
+	</div>
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+<script src="{{url_for('static',filename='js.js')}}"></script>
+</html>
