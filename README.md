@@ -1,4 +1,4 @@
-# My-first-flask-GUI
+# Web app on geography
 Hello world GUI built using flask
 
 ## How to use;
