@@ -1,5 +1,5 @@
 # Web app on geography
-Hello world GUI built using flask
+An E-learning system on geography built using flask.
 
 ## How to use;
 1. Download the zip file  and extract my code
