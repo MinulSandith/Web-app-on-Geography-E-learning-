@@ -1,1 +1,13 @@
-icebergs
+{% extends "layout-navs.html" %}
+	{% block navs%}
+	<title>Icebergs</title>
+	<div class="header">
+		<h1 >Icebergs</h1>
+	</div>
+	<div class="content">
+		<p1>An iceberg is a piece of freshwater ice more than 15 m long that has broken off a glacier or an ice shelf and is floating freely in open water. Icebergs are generally found in the Arctic and Antarctic oceans.</p1>
+		<br>
+		<p1>Because the density of pure ice is about 920 kg/m3 and that of sea water about 1025 kg/m3, typically only one-tenth of the volume of an iceberg is above the water's surface, giving rise to the idiom "tip of the iceberg".</p1>
+		<br><br><a href="{{url_for('home')}}"><button class="next" ><b>Home</b></button></a>
+	</div>
+	{% endblock navs %}

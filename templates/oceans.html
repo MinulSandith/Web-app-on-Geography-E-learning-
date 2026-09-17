@@ -1,1 +1,13 @@
-oceans
+{% extends "layout-navs.html" %}
+	{% block navs%}
+	<title>Oceans</title>
+	<div class="header">
+		<h1 >Oceans</h1>
+	</div>
+	<div class="content">
+		<p1>The ocean is the body of salt water that covers approximately 70.8% of the surface of Earth. The ocean is conventionally divided into five large oceanic regions: the Pacific, Atlantic, Indian, Antarctic (Southern), and Arctic Oceans.</p1>
+		<br>
+		<p1>The ocean is the primary component of Earth's hydrosphere, and thus is essential to life on Earth, forms part of the carbon cycle, and influences climate and weather patterns.</p1>
+		<br><br><a href="{{url_for('icebergs')}}"><button class="next" ><b>Next</b></button></a>
+	</div>
+	{% endblock navs %}

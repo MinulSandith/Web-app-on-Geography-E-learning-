@@ -1,1 +1,13 @@
-Forests
+{% extends "layout-navs.html" %}
+	{% block navs%}
+	<title>Forests</title>
+	<div class="header">
+		<h1 >Forests</h1>
+	</div>
+	<div class="content">
+		<p1>A forest is an area of land dominated by trees. Hundreds of definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing, and ecological function.</p1>
+		<br>
+		<p1>Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. Forests account for 75% of the gross primary production of the Earth's biosphere, and contain 80% of the Earth's plant biomass.</p1>
+		<br><br><a href="{{url_for('rivers')}}"><button class="next" ><b>Next</b></button></a>
+	</div>
+	{% endblock navs %}
