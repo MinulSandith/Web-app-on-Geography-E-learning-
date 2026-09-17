@@ -3,7 +3,7 @@
   <head>
     {% if x == "asia" %}
     <link rel="stylesheet" href="{{ url_for('static' ,filename='design.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static' ,filename='2 design.css') }}"link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='2 design.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     {% else %}
     <link rel="stylesheet" href="{{ url_for('static' ,filename='2 design.css') }}">
@@ -32,27 +32,27 @@
         <i class="fas fa-water">
         </i>	&nbsp;Lakes
       </a>
-      <a href="#">			
+      <a href="{{url_for('rivers')}}">
         <i class="fas fa-ship">
         </i>		&nbsp;Rivers
       </a>
-      <a href="{{url_for('volcanos')}}">	
+      <a href="{{url_for('volcanos')}}">
         <i class="fas fa-fire">
         </i>		&nbsp;Volcanos
       </a>
-      <a href="#">			
+      <a href="{{url_for('forests')}}">
         <i class="fas fa-tree">
         </i>		&nbsp;Forests
       </a>
-      <a href="#">			
+      <a href="#">
         <i class="fas fa-sun">
         </i>		&nbsp;Deserts
       </a>
-      <a href="#">			
+      <a href="{{url_for('oceans')}}">
         <i class="fab fa-servicestack">
         </i>&nbsp;Oceans
       </a>
-      <a href="#">			
+      <a href="{{url_for('icebergs')}}">
         <i class="far fa-snowflake">
         </i>&nbsp;Icebergs
       </a>
